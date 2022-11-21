@@ -24,7 +24,7 @@ class TracksController {
         }
 
         try {
-            const tracks = await ApiService.get('/search', queryString, limit);
+            const tracks = await ApiService.getAll('/search', queryString, limit);
             return res.json(tracks.data);
         } catch (error) {
             console.log('error', error)

@@ -4,6 +4,8 @@ export interface CRUD {
 }
 
 export interface API {
-    get: (endpoint: string, query: string, limit: number | string) => Promise<any>,
-    post?: (endpoint: string, payload: any) => Promise<any>
+    getAll?: (endpoint: string, query: string, limit: number | string) => Promise<any>,
+    getById?: (endpoint: string, id: number) => Promise<any>,
+    getByUrl?: (url: string) => Promise<any>,
+    create?: (endpoint: string, payload: any) => Promise<any>
 }
