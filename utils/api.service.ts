@@ -1,7 +1,7 @@
 import axios from 'axios';
 import {API} from '../common/interfaces';
 
-const baseUrl = 'https://api.deezer.com';
+const baseUrl = process.env.DEEZER_URL || 'https://api.deezer.com';
 
 class ApiService implements API {
    // Handles GET requests

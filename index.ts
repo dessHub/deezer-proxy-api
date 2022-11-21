@@ -6,7 +6,7 @@ import tracksApi from "./routes/tracks";
 dotenv.config();
 
 const app: Express = express();
-const port = process.env.PORT;
+const port = process.env.PORT || 8080;
 
 // Define routes
 app.use('/api/v1/artists', artistsApi);
