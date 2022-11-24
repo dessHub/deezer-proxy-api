@@ -33,7 +33,7 @@ node: >14
   
 ## API endpoints
 
-The following endpoints are available
+Here is the hosted version `https://deezer-proxy-api.herokuapp.com/api/v1`. The following endpoints are available
 
 | enpoint   | descriptions  |examples      |
 | --------- | ---------------- | ----------------------
